@@ -13,4 +13,4 @@ var numbers = [1, 2, 3];
 numbers.map((item) => item + 2);
 
 var n1: string = '';
-n1 = 4;
+n1 = '4';
