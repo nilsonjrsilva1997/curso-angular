@@ -73,4 +73,27 @@
         </div>
 
     </section>
+
+    <section class="two-way-binding">
+        <article>
+            <h3>Two-way data binding</h3>
+
+            <div>
+                <input type="text" 
+                    [value]="nome"
+                    (input)="nome = tmpName.value"
+                    #tmpName
+                />
+
+                <input type="text" 
+                    [ngModel]="nome"
+                    (ngModelChange)="nome = $event.target.value"
+                />
+
+                <input type="text" [(ngModel)]="nome" />
+
+                <p>Você disitou o nome: {{ nome }}</p>
+            </div>
+        </article>
+    </section>
 </section>

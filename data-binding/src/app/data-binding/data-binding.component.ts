@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
+
 export class DataBindingComponent implements OnInit {
 
   url: string = 'https://loiane.com';
@@ -13,6 +14,7 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
+  nome: string = 'abc';
 
   getValor(x: number, y: number) {
     return x + y;
