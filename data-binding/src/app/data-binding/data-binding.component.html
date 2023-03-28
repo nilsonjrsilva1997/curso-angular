@@ -34,6 +34,11 @@
         <div class="alert {{ classe.value }}">
             Texto colotido conforme valor do combobox
         </div>
+
+        <div class="alert alert-danger"
+            [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+            Texto colotido conforme valor do combobox
+        </div>
         
         <div>
             <div class="alert" [class.alert-success]="classe.value == 'alert-success'" role="alert">Success</div>
