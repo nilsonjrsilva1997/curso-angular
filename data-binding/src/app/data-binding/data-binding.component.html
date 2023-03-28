@@ -30,6 +30,10 @@
                 <option value="alert-danger">Erro</option>
             </select>
         </div>
+
+        <div class="alert {{ classe.value }}">
+            Texto colotido conforme valor do combobox
+        </div>
         
         <div>
             <div class="alert" [class.alert-success]="classe.value == 'alert-success'" role="alert">Success</div>
