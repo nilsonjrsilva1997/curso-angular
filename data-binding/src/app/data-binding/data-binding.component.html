@@ -19,6 +19,24 @@
 
     <article>
         <h3>Class e Style binding - CSS</h3>
+
+        <div>
+            <p>Selecione uma classe</p>
+
+            <select class="form-control" name="class-select" #classe (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Alerta</option>
+                <option value="alert-danger">Erro</option>
+            </select>
+        </div>
         
+        <div>
+            <div class="alert" [class.alert-success]="classe.value == 'alert-success'" role="alert">Success</div>
+            <div class="alert" [class.alert-info]="classe.value == 'alert-info'" role="alert">Info</div>
+            <div class="alert" [class.alert-warning]="classe.value == 'alert-warning'" role="alert">Warning</div>
+            <div class="alert" [class.alert-danger]="classe.value == 'alert-danger'" role="alert">Danger</div>
+        </div>
+
     </article>
 </section>
