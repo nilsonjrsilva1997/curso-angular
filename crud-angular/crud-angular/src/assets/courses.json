@@ -1,0 +1,6 @@
+[
+    { "id": "1", "name": "Angular", "category": "front-end"},
+    { "id": "1", "name": "React", "category": "front-end"},
+    { "id": "1", "name": "React Native", "category": "Mobile"},
+    { "id": "1", "name": "Laravel", "category": "back-end"}
+]
